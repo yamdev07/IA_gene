@@ -1,0 +1,98 @@
+Nov 10 00:01:12 server sshd[18421]: Failed password for invalid user admin from 192.168.1.24 port 55221 ssh2
+Nov 10 00:02:44 server sshd[18455]: Failed password for root from 37.48.112.5 port 33120 ssh2
+Nov 10 00:03:03 server sshd[18455]: Accepted password for user1 from 10.0.0.5 port 44112 ssh2
+Nov 10 00:05:11 server systemd[1]: Started Daily apt upgrade and clean activities.
+Nov 10 00:10:21 server CRON[19412]: (root) CMD (/usr/local/backup.sh)
+Nov 10 00:10:22 server backup[19413]: Backup completed successfully.
+Nov 10 00:12:45 apache-access: 127.0.0.1 - - [10/Nov/2025:00:12:45] "GET /index.html HTTP/1.1" 200 532
+Nov 10 00:13:02 apache-access: 185.12.44.9 - - [10/Nov/2025:00:13:02] "POST /login.php HTTP/1.1" 401 2154
+Nov 10 00:15:54 mysql[2201]: Access denied for user 'root'@'192.168.1.45' (using password: YES)
+Nov 10 00:17:32 fail2ban.filter[3121]: INFO [sshd] Found 37.48.112.5
+Nov 10 00:17:32 fail2ban.actions[3122]: NOTICE [sshd] Ban 37.48.112.5
+Nov 10 00:22:10 nginx-access: 102.45.231.78 - - [10/Nov/2025:00:22:10] "GET /api/v1/status HTTP/1.1" 200 124
+Nov 10 00:25:47 server sshd[21548]: Connection closed by authenticating user root 10.0.0.22 port 55211
+Nov 10 00:30:11 server systemd[1]: Started Rotate journal logs.
+Nov 10 00:34:51 apache-error: [error] [client 185.12.44.9] File does not exist: /var/www/html/favicon.ico
+Nov 10 00:37:12 CRON[22155]: (root) CMD (/usr/bin/php /var/www/cron.php)
+Nov 10 00:40:02 server kernel: Firewall: IN=eth0 OUT= MAC=fa:16:3e:ab:22:1c SRC=102.45.231.78 DST=192.168.1.10 PROTO=TCP SPT=50122 DPT=22
+Nov 10 00:42:32 server sshd[22911]: Failed password for invalid user test from 102.45.231.78 port 50122 ssh2
+Nov 10 00:45:14 nginx-access: 54.88.12.77 - - [10/Nov/2025:00:45:14] "GET /admin HTTP/1.1" 403 212
+Nov 10 00:47:33 mysql[2201]: Slow query: SELECT * FROM logs WHERE date > NOW()-INTERVAL 1 HOUR
+Nov 10 00:50:41 windows-event[1001]: User login success: user=Administrator ip=10.0.0.15
+Nov 10 00:51:33 windows-event[4625]: An account failed to log on. User: guest Source IP: 102.45.231.78
+Nov 10 00:53:11 apache-access: 176.34.22.33 - - [10/Nov/2025:00:53:11] "GET /wp-login.php HTTP/1.1" 200 5120
+Nov 10 00:53:12 apache-access: 176.34.22.33 - - [10/Nov/2025:00:53:12] "POST /wp-login.php HTTP/1.1" 403 2311
+Nov 10 00:56:12 server sshd[23912]: Accepted publickey for ubuntu from 192.168.1.15 port 60231 ssh2
+Nov 10 01:01:55 server systemd[1]: Started Daily cleanup of temporary files.
+Nov 10 01:04:22 fail2ban.filter[3121]: INFO [sshd] Found 102.45.231.78
+Nov 10 01:04:23 fail2ban.actions[3122]: NOTICE [sshd] Ban 102.45.231.78
+Nov 10 01:10:12 apache-access: 176.34.22.33 - - [10/Nov/2025:01:10:12] "GET / HTTP/1.1" 200 940
+Nov 10 01:14:10 server CRON[24050]: (www-data) CMD (/usr/bin/php /var/www/html/queue.php)
+Nov 10 01:18:28 nginx-error: upstream timed out (110: Connection timed out) while reading response header from upstream
+Nov 10 01:21:44 server sshd[24987]: Failed password for root from 201.55.112.99 port 44781 ssh2
+Nov 10 01:23:12 server sshd[24987]: Failed password for root from 201.55.112.99 port 44782 ssh2
+Nov 10 01:25:33 server sshd[24987]: Failed password for root from 201.55.112.99 port 44783 ssh2
+Nov 10 01:25:35 fail2ban.actions[3122]: NOTICE [sshd] Ban 201.55.112.99
+Nov 10 01:33:54 apache-access: 99.12.113.55 - - [10/Nov/2025:01:33:54] "GET /robots.txt HTTP/1.1" 200 67
+Nov 10 01:35:22 windows-event[1000]: System reboot scheduled by user Administrator
+Nov 10 01:40:02 windows-event[1074]: The system has rebooted without cleanly shutting down first.
+Nov 10 01:43:11 windows-event[6005]: The Event log service was started.
+Nov 10 01:52:44 server kernel: USB device connected: Vendor=1a86 Product=7523 Serial=12345678
+Nov 10 01:55:02 apache-access: 145.66.231.77 - - [10/Nov/2025:01:55:02] "GET /contact HTTP/1.1" 200 1403
+Nov 10 02:01:11 nginx-access: 88.112.34.98 - - [10/Nov/2025:02:01:11] "GET /api/v1/users HTTP/1.1" 200 3255
+Nov 10 02:03:12 nginx-access: 88.112.34.98 - - [10/Nov/2025:02:03:12] "POST /api/v1/login HTTP/1.1" 401 217
+Nov 10 02:06:44 server sshd[30117]: Accepted password for deploy from 172.20.0.2 port 40321 ssh2
+Nov 10 02:10:10 CRON[30144]: (root) CMD (/etc/cron.hourly/disk-report)
+Nov 10 02:12:21 disk-report[30145]: Disk usage above threshold: /dev/sda1 91%
+Nov 10 02:15:33 mysql[2201]: Connection refused for user 'report'@'10.0.0.9'
+Nov 10 02:20:41 nginx-access: 34.211.22.43 - - [10/Nov/2025:02:20:41] "GET /superadmin HTTP/1.1" 403 203
+Nov 10 02:22:12 server sshd[31140]: Failed password for invalid user guest from 34.211.22.43 port 50933 ssh2
+Nov 10 02:23:14 server sshd[31140]: Failed password for invalid user guest from 34.211.22.43 port 50934 ssh2
+Nov 10 02:24:55 fail2ban.actions[3122]: NOTICE [sshd] Ban 34.211.22.43
+Nov 10 02:30:14 apache-error: [error] [client 145.66.231.77] Directory index forbidden by Options directive: /var/www/private/
+Nov 10 02:35:20 server systemd[1]: Started Daily database maintenance.
+Nov 10 02:40:37 mysql[2201]: Slow query: UPDATE users SET last_login=NOW()
+Nov 10 02:45:11 apache-access: 77.88.55.12 - - [10/Nov/2025:02:45:11] "GET /blog HTTP/1.1" 200 3344
+Nov 10 02:47:18 apache-access: 77.88.55.12 - - [10/Nov/2025:02:47:18] "GET /blog/article-1 HTTP/1.1" 200 5275
+Nov 10 02:50:02 nginx-error: client sent invalid method while reading client request line
+Nov 10 03:01:55 windows-event[4624]: An account was logged off. User: SYSTEM
+Nov 10 03:05:21 windows-event[1001]: User login success: user=Guest ip=10.0.0.20
+Nov 10 03:10:30 server kernel: cpu: Core temperature above threshold, cpu clock throttled
+Nov 10 03:12:44 kernel: CPU0: Core temperature normal
+Nov 10 03:15:01 CRON[31000]: (root) CMD (/usr/bin/certbot renew)
+Nov 10 03:16:33 certbot[31001]: Successfully renewed certificate.
+Nov 10 03:20:47 apache-access: 61.221.10.44 - - [10/Nov/2025:03:20:47] "GET /phpmyadmin HTTP/1.1" 403 212
+Nov 10 03:22:11 apache-access: 61.221.10.44 - - [10/Nov/2025:03:22:11] "GET /mysql HTTP/1.1" 404 512
+Nov 10 03:25:55 server sshd[32210]: Failed password for root from 61.221.10.44 port 60221 ssh2
+Nov 10 03:26:32 server sshd[32210]: Failed password for root from 61.221.10.44 port 60222 ssh2
+Nov 10 03:27:17 fail2ban.actions[3122]: NOTICE [sshd] Ban 61.221.10.44
+Nov 10 03:33:12 nginx-access: 99.12.113.55 - - [10/Nov/2025:03:33:12] "GET /api/v1/health HTTP/1.1" 200 97
+Nov 10 03:40:10 apache-error: [warn] mod_security: Access denied with code 403 (phase 2)
+Nov 10 03:42:55 server kernel: eth0: link up
+Nov 10 03:45:22 server kernel: eth0: link down
+Nov 10 03:45:30 server kernel: eth0: link up, 1000Mbps
+Nov 10 03:52:33 mysql[2201]: Query OK: DELETE FROM sessions WHERE expires < NOW()
+Nov 10 04:00:01 CRON[33321]: (root) CMD (/usr/bin/logrotate /etc/logrotate.conf)
+Nov 10 04:02:11 logrotate[33322]: Rotating logs completed.
+Nov 10 04:05:44 apache-access: 201.44.22.87 - - [10/Nov/2025:04:05:44] "GET /shop HTTP/1.1" 200 7342
+Nov 10 04:08:22 apache-access: 201.44.22.87 - - [10/Nov/2025:04:08:22] "GET /shop/product/12 HTTP/1.1" 200 10443
+Nov 10 04:15:12 server sshd[34011]: Accepted publickey for devops from 172.16.2.50 port 45001 ssh2
+Nov 10 04:21:22 systemd[1]: Started Scheduled cleanup of cache.
+Nov 10 04:25:44 cache-cleaner[34044]: Removed 215 expired cache files.
+Nov 10 04:30:12 nginx-access: 131.100.55.66 - - [10/Nov/2025:04:30:12] "GET /static/img/logo.png HTTP/1.1" 200 43212
+Nov 10 04:33:14 server sshd[34100]: Failed password for user test from 88.112.34.98 port 51121 ssh2
+Nov 10 04:34:55 server sshd[34100]: Failed password for user test from 88.112.34.98 port 51122 ssh2
+Nov 10 04:36:22 fail2ban.actions[3122]: NOTICE [sshd] Ban 88.112.34.98
+Nov 10 04:40:33 apache-error: [error] Invalid URI in request GET //../../../../etc/passwd
+Nov 10 04:43:11 nginx-error: SSL handshake failed: error:1408F10B
+Nov 10 04:45:52 server kernel: Out of memory: Kill process 5521 (php-fpm) score 250
+Nov 10 04:50:14 php-fpm[5521]: Process killed due to excessive memory usage.
+Nov 10 04:55:33 mysql[2201]: Warning: Aborted connection 1501 to db 'appdb'
+Nov 10 05:01:12 apache-access: 77.88.55.12 - - [10/Nov/2025:05:01:12] "GET /rss.xml HTTP/1.1" 200 2112
+Nov 10 05:03:55 apache-access: 145.66.231.77 - - [10/Nov/2025:05:03:55] "GET /sitemap.xml HTTP/1.1" 200 15455
+Nov 10 05:10:21 CRON[35021]: (root) CMD (/usr/bin/sh /scripts/cleanup.sh)
+Nov 10 05:11:22 cleanup[35022]: Cleanup completed.
+Nov 10 05:15:40 server sshd[35188]: Accepted password for root from 172.20.10.5 port 50211 ssh2
+Nov 10 05:22:11 server kernel: md0: resync completed (time)
+Nov 10 05:28:10 nginx-access: 54.88.12.77 - - [10/Nov/2025:05:28:10] "GET /dashboard HTTP/1.1" 302 0
+Nov 10 05:29:55 nginx-access: 54.88.12.77 - - [10/Nov/2025:05:29:55] "GET /login HTTP/1.1" 200 3134
